@@ -1,0 +1,80 @@
+<div>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="background">
+        <h1 class="center"> Tic Tac Toe</h1>
+        
+        <p id='login_label'>Login to Play</p>
+        <form id='cred' action="auth" method="POST">
+            <input type="text" id='creduser' name="username" placeholder="Username" required>
+            <input type="password" id='credpass' name="password" placeholder="Password" required>
+            <input type="submit" id='credsub'>
+        </form>
+        <a href="/" id='logout'>logout</a>
+
+        <p id='create_label'> Create User </p>
+        <p> Please do not put sensitive information as passwords are NOT encrypted.</p>
+        <form id='createcred' action="newuser" method="POST">
+            <input type="text" id='create_creduser' name="create_username" placeholder="Username" required>
+            <input type="password" id='create_credpass' name="create_password" placeholder="Password" required>
+            <input type="submit" id='create_credsub'>
+        </form>
+        <p>Leaderboard</p>
+        <ol id='leaderboard'></ol>
+        <br>
+        <button id='newGamebutton'> New Game </button>
+        <table id='game' class="color">
+            <tr>
+                <td id="00"> </td>
+                <td id="01"> </td>
+                <td id="02"> </td>
+            </tr>
+            <tr>
+                <td id="10"> </td>
+                <td id="11"> </td>
+                <td id="12"> </td>
+            </tr>
+            <tr>
+                <td id="20"> </td>
+                <td id="21"> </td>
+                <td id="22"> </td>
+            </tr>
+        </table>
+        <br>
+        <h2 > Frequently Asked Questions (FAQ) </h2>
+        <form autocomplete=on class="center">
+           
+            <label for="firstQ"> Search for a question </label>
+            <input type="text" id="firstQ" list="datalist1" > 
+            <datalist id="datalist1">
+                <option value="How to play Tic Tac Toe?">
+                <option value="How to get #1 on leaderboard?"></option>
+                <option value="Is making an account free?"></option>
+                <option value="What is the leaderboard showing?"></option>
+
+            </datalist>
+        </form>
+
+        <h3 > Are you feeling down because you're not #1 on the leaderboard?</h3>
+        <p3> Click here to lift your spirits! </p3>
+        <button id="jokeB" type="button">Get a Random Joke</button>
+        <p id="setup"></p>
+        <p id="punchline"></p>
+
+        <p4>Or instead here's some random advice. </p4>
+        
+        <button id="dogB" type="button"> Get Advice </button>
+        <p id="url"> </p>
+        
+        
+        
+        <!-- <img src=images> </img>   -->
+        <!-- <p id="fileSizeBytes"></p> -->
+
+    </body>
+    <script src="scripts.js"></script>
+  
+</div>

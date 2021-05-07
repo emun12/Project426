@@ -1,0 +1,21 @@
+table, th, td {
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 40px;
+
+  }
+
+  .background{
+    background-color: lightblue;
+
+  }
+
+  /* .center{
+    text-align: center;
+  } */
+
+  .color{
+    background-color:skyblue;
+    /* color: lightpink; */
+
+  }
